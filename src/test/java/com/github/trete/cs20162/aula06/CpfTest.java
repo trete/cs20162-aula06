@@ -25,4 +25,16 @@ public class CpfTest {
         int cpf[] = new int[]{2,7,3,6,2,6,2,9,1,3,9};
         assertEquals(false, Cpf.cpf(cpf));
     }
+    
+    @Test
+    public void valorArbitrarioDeTesteFalsoDenovo(){
+        int cpf[] = new int[]{2,7,3,6,2,6,2,9,1,9,3};
+        assertEquals(false, Cpf.cpf2(cpf));
+    }
+    
+    @Test
+    public void valorArbitrarioDeTesteFalsoDenovoDenovo(){
+        int cpf[] = new int[]{7,2,8,4,8,7,6,6,1,9,5};
+        assertEquals(false, Cpf.cpf2(cpf));
+    }
 }

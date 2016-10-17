@@ -30,6 +30,7 @@ public class Cpf {
         int verificadorD = (verificadorB % 11) % 10;
         
         return verificadorC == cpf[9] && verificadorD == cpf[10];
+
     }
    
     /**
@@ -64,6 +65,7 @@ public class Cpf {
                 % 11) % 10;
 
         return verificadorA == cpf[9] && verificadorB == cpf[10];
+
     }
     
     

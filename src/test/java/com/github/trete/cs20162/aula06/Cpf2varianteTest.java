@@ -21,4 +21,10 @@ public class Cpf2varianteTest {
         int cpf[] = new int[]{2,7,3,6,2,6,2,9,1,3,9};
         assertEquals(false, Cpf.cpf2Variante(cpf));
     }
+    
+    @Test
+    public void valorArbitrarioDeTesteFalsoDenovo(){
+        int cpf[] = new int[]{2,7,3,6,2,6,2,9,1,9,3};
+        assertEquals(false, Cpf.cpf2(cpf));
+    }
 }
